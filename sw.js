@@ -4,7 +4,7 @@ const cacheName = "my-cache-v1";
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(cacheName).then((cache) => {
-      return cache.addAll(["/", "/index.html", "/app.js", "/deepbot.png"]);
+      return cache.addAll(["/", "/index.html", "/app.js", "/test.png"]);
     })
   );
 });
